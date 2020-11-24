@@ -1,0 +1,7 @@
+{
+  "name": "clubApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
