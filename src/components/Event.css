@@ -1,0 +1,80 @@
+.event-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	padding: 10px;
+	background-color: #fff;
+}
+
+.title {
+	display: grid;
+	justify-content: start;
+	grid-column: 1 / span 3;
+	grid-row: 1 / span 2;
+	font-weight: bold;
+	font-size: larger;
+}
+
+.attendees {
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: start;
+	grid-column: 1 / span 1;
+	grid-row: 4 / span 1;
+}
+
+.date {
+	display: grid;
+	justify-content: start;
+	align-items: center;
+	grid-column: 1 / span 2;
+	grid-row: 2 / span 1;
+	font-size: smaller;
+	color: #888;
+}
+
+.check {
+	width: 50px;
+	height: 50px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-column: 4 / span 1;
+	grid-row: 1 / span 4;
+	border-radius: 50%;
+	position: relative;
+	font-size: 30px;
+	color: #fff;
+	background-color: #b80c09;
+
+	align-self: center;
+}
+
+.attending {
+	background-color: #2dd36f;
+}
+
+.disabled {
+	background-color: #888;
+}
+
+.ripple {
+	border-radius: 50%;
+}
+
+.relative {
+	position: relative;
+}
+
+.details-button {
+	width: 200px;
+	height: 80px;
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	left: 20px;
+}
+.modal .ion-page {
+	padding: 25px;
+	justify-content: start;
+}
